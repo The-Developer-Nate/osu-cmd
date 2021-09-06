@@ -1,5 +1,5 @@
 # osu!cmd
-an installer that uses cmd.exe & BluescreenSimulator.exe (use 7-zip to extract the file from osuover.exe to get it)
+an installer that uses cmd.exe & BluescreenSimulator.exe
 
 # why use BluescreenSimulator?
  - It is very easy to use (Thanks to FlyTech!)
