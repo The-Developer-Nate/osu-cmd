@@ -1,5 +1,5 @@
 # osu!cmd
-an installer that uses cmd.exe & BluescreenSimulator.exe
+an installer/updater that uses cmd.exe & BluescreenSimulator.exe
 
 # why use BluescreenSimulator?
  - It is very easy to use (Thanks to FlyTech!)
