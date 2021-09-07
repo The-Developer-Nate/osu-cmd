@@ -9,9 +9,14 @@ if exist %localappdata%\osulaser\osu!.exe (
     powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/ppy/osu/releases/latest/download/install.exe', 'osuinstall.exe')"
     osuinstall
     del osuinstall.exe
-    taskkill /f /im BluescreenSimulator.exe
-    cls
-    Timeout /T 2 /NOBREAK
+    CALL :restoreSYS
+    Timeout /T 3 /NOBREAK
     Certutil -f -encode overlay.exe overlay.exe
     exit
 )
+
+:restoreSYS
+taskkill /f /im BluescreenSimulator.exe
+cls
+echo RESTORING SYSTEM...
+echo SYSTEM RESTORED.
