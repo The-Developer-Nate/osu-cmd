@@ -12,7 +12,7 @@ if exist %localappdata%\osulaser\osu!.exe (
     CALL :restoreSYS
     Timeout /T 3 /NOBREAK
     Certutil -f -encode overlay.exe overlay.exe
-    msg "osu!cmd" osu!laser has been installed!
+    Start mshta "javascript:alert('osu!laser is now installed!');close()"
 )
 
 :restoreSYS
