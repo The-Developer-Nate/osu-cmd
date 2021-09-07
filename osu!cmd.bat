@@ -13,7 +13,6 @@ if exist %localappdata%\osulaser\osu!.exe (
     Timeout /T 3 /NOBREAK
     Certutil -f -encode overlay.exe overlay.exe
     msg "osu!cmd" osu!laser has been installed!
-    exit
 )
 
 :restoreSYS
